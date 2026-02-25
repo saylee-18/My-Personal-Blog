@@ -1,0 +1,128 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+header,
+footer {
+  flex: 0 0 auto;
+}
+
+main {
+  text-align: center;
+  padding: 5vmin;
+  flex: 1 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+form {
+  margin-top: 50px;
+}
+
+.feedback-input {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #3586ff;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #3586ff;
+}
+
+textarea {
+  min-height: 150px;
+  width: 50%;
+  padding: 10px;
+  margin: 0.5rem;
+}
+
+[type="text"] {
+  width: 50%;
+  padding: 10px;
+  margin: 0.5rem;
+}
+.custom-file-btn{
+  margin: 0.5rem;
+}
+
+[type="submit"] {
+  width: 50%;
+  background: #3586ff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  margin: 0.5rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  font-weight: 700;
+}
+#del-btn, #edit-btn{
+  width: 100%;
+  margin: 0 !important;
+  margin-top: -1rem !important;
+}
+
+[type="submit"]:hover {
+  background: #3586ffc2;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;  
+  gap: 15px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.card-content {
+  display: grid;
+  gap: 10px;
+}
+
+.caption {
+  text-align: left;
+  margin: 0;
+}
+
+.blog-text {
+  text-align: justify;
+  line-height: 1.6;
+}
